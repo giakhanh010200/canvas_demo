@@ -19,8 +19,8 @@ addEventListener(
     "pointerdown",
     (e) => {
         // Cache the client X/Y coordinates
-        mouse.x = e.touches[0].clientX;
-        mouse.y = e.touches[0].clientY;
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
     },
 );
 addEventListener('resize', function() {
