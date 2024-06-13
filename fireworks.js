@@ -16,7 +16,7 @@ addEventListener('click', function(e) {
     init(1000);
 })
 addEventListener(
-    "touchstart",
+    "pointerdown",
     (e) => {
         // Cache the client X/Y coordinates
         mouse.x = e.touches[0].clientX;
