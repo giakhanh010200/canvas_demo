@@ -1,1 +1,1 @@
-# firework_canvas
+# canvas_demo
