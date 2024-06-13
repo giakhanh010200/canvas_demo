@@ -10,12 +10,12 @@ const mouse = {
     x: canvas.width / 2,
     y: canvas.height / 2
 }
-addEventListener('click', function(e) {
+canvas.addEventListener('click', function(e) {
     mouse.x = e.clientX;
     mouse.y = e.clientY;
     init(1000);
 })
-addEventListener(
+canvas.addEventListener(
     "pointerdown",
     (e) => {
         // Cache the client X/Y coordinates
