@@ -49,15 +49,15 @@ function createObject(x, y, r, distance, velocity) {
     this.alpha = 1;
     this.image = imageObj
     this.draw = () => {
-        // c.save();
-        // c.globalAlpha = this.alpha;
-        // c.beginPath();
-        // c.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
-        // c.fillStyle = this.color;
-        // c.fill();
-        // c.strokeStyle = this.color;
-        // c.stroke();
-        // c.restore();
+        c.save();
+        c.globalAlpha = this.alpha;
+        c.beginPath();
+        c.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
+        c.fillStyle = this.color;
+        c.fill();
+        c.strokeStyle = this.color;
+        c.stroke();
+        c.restore();
         c.drawImage(this.image, this.x, this.y);
     }
     this.update = () => {
