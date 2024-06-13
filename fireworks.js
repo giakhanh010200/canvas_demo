@@ -15,6 +15,14 @@ addEventListener('click', function(e) {
     mouse.y = e.clientY;
     init(1000);
 })
+addEventListener(
+    "touchstart",
+    (e) => {
+        // Cache the client X/Y coordinates
+        mouse.x = e.touches[0].clientX;
+        mouse.y = e.touches[0].clientY;
+    },
+);
 addEventListener('resize', function() {
     canvas.width = innerWidth;
     canvas.heigth = innerHeight;
